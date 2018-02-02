@@ -1,7 +1,7 @@
 {
   "name": "github-battle",
   "version": "1.0.0",
-  "description": "Project for React Training's fundamental course.",
+  "description": "Project for TylerMcGinnis.com's Modern JavaScript course",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open",
@@ -15,26 +15,30 @@
     "presets": [
       "env",
       "react"
+    ],
+    "plugins": [
+      "transform-class-properties"
     ]
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.2.2",
     "babel-preset-react": "^6.23.0",
     "css-loader": "^0.27.3",
     "firebase-tools": "^3.5.0",
     "html-webpack-plugin": "^2.28.0",
     "style-loader": "^0.16.0",
-    "webpack": "^2.3.1",
-    "webpack-dev-server": "^2.4.2"
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "2.4.2"
   },
   "dependencies": {
-    "axios": "^0.16.0",
-    "babel-polyfill": "^6.26.0",
+    "babel-polyfill": "^6.23.0",
     "prop-types": "^15.5.4",
     "react": "^16.0.0-alpha.5",
     "react-dom": "^16.0.0-alpha.5",
-    "react-router-dom": "^4.0.0"
+    "react-router-dom": "^4.0.0",
+    "whatwg-fetch": "^2.0.3"
   }
 }
